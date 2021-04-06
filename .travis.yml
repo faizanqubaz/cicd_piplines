@@ -4,7 +4,7 @@ services:
 
 
 before_install:
-  - docker build -t faizan/cicd_piplines -f Dockerfile.dev .
+  - docker build -t faizanadil/cicd_piplines -f Dockerfile.dev .
 
 script:
-  - docker run faizan/cicd_piplines npm run test -- --coverage
+  - docker run faizanadil/cicd_piplines npm run test -- --coverage
